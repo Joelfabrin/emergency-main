@@ -41,3 +41,8 @@
 .info-box:nth-of-type(2n) {
   background-color: #def5db;
 }
+
+.BMO {
+  width: 100%;
+  height: auto;
+}

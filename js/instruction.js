@@ -1,0 +1,15 @@
+document
+  .querySelector(".info-graphic button:nth-of-type(1)")
+  .addEventListener("click", function () {
+    console.log("BMO button clicked");
+  });
+document
+  .querySelector(".info-graphic button:nth-of-type(2)")
+  .addEventListener("click", function () {
+    console.log("KRISE button clicked");
+  });
+document
+  .querySelector(".info-graphic button:nth-of-type(3)")
+  .addEventListener("click", function () {
+    console.log("VEJLEDNING button clicked");
+  });
