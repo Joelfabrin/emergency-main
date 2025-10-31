@@ -1,10 +1,11 @@
 .daily_card {
-  background-color: var(--color-card-bg);
+  background-color: white;
   display: grid;
   grid-template-columns: 3fr 5fr;
   gap: 10px;
   padding: 40px 0 40px 20px;
-  border-radius: var(--border-radius);
+  border-radius: 20px;
+  margin: 10px;
   height: minmax(200px, min-content);
 }
 .daily_text {
@@ -13,8 +14,8 @@
   gap: 10px;
 }
 .daily_text h2 {
-  background-color: var(--color-headline-bg);
-  color: var(--color-text-inverted);
+  background-color: black;
+  color: white;
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 1rem;
   margin: 0 0 0.5rem 0;
 }
@@ -32,15 +33,16 @@
   object-fit: cover;
 }
 .news_card {
-  background-color: var(--color-news-bg);
+  background-color: #fffae2;
   display: grid;
   grid-template-rows: repeat(min-content);
   gap: 0.4rem;
   padding: 1rem 0;
   height: minmax(300px, min-content);
+  width: 250px;
 }
 .news_card:nth-child(2n) {
-  background-color: var(--color-news-bg-inverted);
+  background-color: #dbe2f5;
 }
 .news_card > * {
   padding: 0 1rem;
@@ -53,8 +55,8 @@
 }
 .news_card:first-child:before {
   content: "BREAKING NEWS";
-  background-color: var(--color-headline-bg);
-  color: var(--color-headline-text-page);
+  background-color: black;
+  color: white;
   font-size: var(--font-h3-size);
   font-weight: var(--font-weight-medium);
   text-align: center;
@@ -62,10 +64,10 @@
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 0;
 }
 .news_card:first-child {
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  border-radius: 20px 20px 0 0;
 }
 .news_card:last-child {
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border-radius: 0 0 20px 20px;
 }
 
 .news_card .cta_btn {
@@ -74,20 +76,25 @@
 .cta_btn {
   display: inline-block;
   padding: 0.4rem 1rem;
-  background-color: var(--color-cta-card-bg);
-  color: var(--color-text-inverted);
+  background-color: #ff4b00;
+  color: white;
   text-decoration: none;
   width: max-content;
-  border-radius: var(--border-radius);
+  border-radius: 20px;
 }
 .news_card .cta_btn {
-  background-color: var(--color-cta-newscard-bg);
+  background-color: #ffa680;
+  color: black;
 }
 .news_card:nth-of-type(2n) .cta_btn {
-  background-color: var(--color-cta-newscard-bg-inverted);
-  color: var(--color-text);
+  background-color: #6f90eb;
+  color: black;
 }
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+.news_card:last-child {
+  text-align: center;
 }
