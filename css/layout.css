@@ -4,7 +4,7 @@ body {
   grid-template-rows: auto 1fr auto;
   height: 100vh;
   max-width: 1200px;
-  margin: 0 100px;
+  margin: 0 auto;
 }
 main {
   display: grid;
