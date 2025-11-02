@@ -101,18 +101,28 @@ nav a {
 }
 
 #logotype-wrapper > a {
-  color: var(--color-text-logotype);
-  font-size: var(--font-logotype-size);
-  font-weight: var(--font-weight-medium);
-  width: max-content;
-  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+#logotype-wrapper > a:focus-visible {
+  outline: 2px solid var(--color-text-logotype);
+  outline-offset: 2px;
+}
+
+#logotype-wrapper .logo-img {
+  height: 2.5rem;
+  width: auto;
+  display: block;
 }
 
 /* Global menu */
 header nav li a {
   margin: 1.5rem;
   background-color: #fffae2;
-  color: var(--color-text);
+  color: black;
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -125,7 +135,7 @@ header > nav li > a:after {
 
 /* Global menu hover effekt - Lav den om til det, du synes */
 nav a:hover {
-  background-color: var(--color-link-hover);
+  background-color: white;
 }
 
 nav a:active {
