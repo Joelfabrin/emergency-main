@@ -105,11 +105,19 @@ nav a {
   align-items: center;
   height: 100%;
   padding: 0 1rem;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 999px;
 }
 
 #logotype-wrapper > a:focus-visible {
   outline: 2px solid var(--color-text-logotype);
   outline-offset: 2px;
+}
+
+#logotype-wrapper > a:hover {
+  background-color: transparent;
+  border-color: #ffffff;
 }
 
 #logotype-wrapper .logo-img {
