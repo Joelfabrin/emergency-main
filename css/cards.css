@@ -14,7 +14,7 @@
   gap: 10px;
 }
 .daily_text h2 {
-  background-color: black;
+  background-color: #823135;
   color: white;
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 1rem;
   margin: 0 0 0.5rem 0;
@@ -55,7 +55,7 @@
 }
 .news_card:first-child:before {
   content: "BREAKING NEWS";
-  background-color: black;
+  background-color: #823135;
   color: white;
   font-size: var(--font-h3-size);
   font-weight: var(--font-weight-medium);
@@ -76,11 +76,11 @@
 .cta_btn {
   display: inline-block;
   padding: 0.4rem 1rem;
-  background-color: #ff4b00;
+  background-color: #ae2428;
   color: white;
   text-decoration: none;
   width: max-content;
-  border-radius: 20px;
+  border-radius: 0px 100px 0px 0px;
 }
 .news_card .cta_btn {
   background-color: #ffa680;

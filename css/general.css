@@ -9,19 +9,28 @@ header {
 }
 
 #main-disclamer {
-  height: 225px;
-  background-color: var(--color-head-bg);
+  height: 160px;
+  background-color: #ae2428; /* fallback */
+  background-image: linear-gradient(
+    90deg,
+    #000000 0%,
+    #000000 35%,
+    #ae2428 65%,
+    #ae2428 100%
+  );
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
-  padding-bottom: 2%;
-  margin-bottom: var(--margin-head-bottom);
+  padding: 1.25rem 2rem;
+  overflow: hidden;
 }
 
 #main-disclamer-content {
   display: flex;
   column-gap: 1rem;
+  width: 100%;
+  align-items: center;
+  flex: 1 1 auto;
 }
 
 main section {
@@ -38,11 +47,42 @@ h1 {
   text-align: left;
 }
 
+#frontpage #main-disclamer .headline-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+#frontpage #main-disclamer .headline-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  flex: 1 1 auto;
+  height: clamp(2.4rem, 6vw, 3.8rem);
+  display: flex;
+  align-items: center;
+}
+
+#frontpage #main-disclamer h1 {
+  font-size: clamp(2.4rem, 5.8vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: 0.12em;
+  word-spacing: 0.45em;
+  text-transform: uppercase;
+  text-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  transform: translateX(0);
+}
+
 #instruction h1,
 #register h1 {
   margin: 40px 0 20px 0;
   padding: 15px 30px;
   background-color: #ae2428;
+  border-radius: 0px 100px 0px 0px;
   color: white;
   font-size: var(--font-h2-size);
 }
@@ -75,7 +115,14 @@ main > h1 {
 /* NAVIGATION STRUCTURES */
 header > nav {
   height: 100%;
-  background-color: var(--color-menu-bg);
+  background-color: #ae2428; /* Fallback for browsers without gradients */
+  background-image: linear-gradient(
+    90deg,
+    #000000 0%,
+    #000000 35%,
+    #ae2428 65%,
+    #ae2428 100%
+  );
 }
 
 nav ul {
@@ -93,11 +140,12 @@ nav a {
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: black;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 3.6rem;
+  width: 420px;
+  flex: 0 0 auto;
 }
 
 #logotype-wrapper > a {
@@ -107,7 +155,6 @@ nav a {
   padding: 0 1rem;
   background-color: transparent;
   border: 2px solid transparent;
-  border-radius: 999px;
 }
 
 #logotype-wrapper > a:focus-visible {
@@ -117,7 +164,7 @@ nav a {
 
 #logotype-wrapper > a:hover {
   background-color: transparent;
-  border-color: #823135;
+  border: solid 4px white;
 }
 
 #logotype-wrapper .logo-img {
@@ -129,11 +176,12 @@ nav a {
 /* Global menu */
 header nav li a {
   margin: 1.5rem;
-  background-color: #fffae2;
-  color: black;
+  background-color: #823135;
+  color: white;
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border: solid 1px white;
+  border-radius: 5px;
 }
 
 /* Pilen efter menu-tekst */
@@ -143,6 +191,7 @@ header > nav li > a:after {
 
 /* Global menu hover effekt - Lav den om til det, du synes */
 nav a:hover {
+  color: black;
   background-color: white;
 }
 

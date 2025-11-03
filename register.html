@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -39,17 +39,135 @@
       <h1>INDBERET</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>BMO MANGEL? INDBERET DET HER</h2>
+          <p>
+            Hjælp os med at holde overblik over landets BMO krise. Udfyld
+            formularen og del dine observationer, så vores kriseteam hurtigt kan
+            reagere.
+          </p>
+          <ul class="form-highlights">
+            <li>Indsend lokale observationer fra din bydel</li>
+            <li>Fortæl hvor du sidst så en ægte BMO</li>
+            <li>Hold dig opdateret på status og anbefalinger</li>
+          </ul>
+          <p class="form-note">
+            Alle indberetninger bliver behandlet fortroligt og hjælper os med at
+            beskytte morgendagens morgenmad.
+          </p>
         </article>
-        <form id="webform"></form>
+        <aside id="form-alert">
+          <h2>ALARMKANAL</h2>
+          <p>
+            Har du akut brug for assistance? Kontakt vores døgnbemandede hotline
+            eller følg de seneste anbefalinger fra beredskabet.
+          </p>
+          <div class="alert-actions">
+            <a class="cta-link" href="tel:+4511223344">Ring 1122 3344</a>
+            <a class="cta-link secondary" href="instruction.html"
+              >Læs instruktioner</a
+            >
+          </div>
+        </aside>
       </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
+  
       </section>
+      <div class="frame">
+        <form action="#" method="post" novalidate>
+          <div class="grid">
+            <div class="field">
+              <label for="where">HVILKEN BYDEL ER DU FRA ?</label>
+              <select name="køn" id="vælg-bydel">
+                <option value="">--VÆLG EN BYDEL--</option>
+                <option value="mand">ØSTERBRO</option>
+                <option value="kvinde">NØRREBRO</option>
+                <option value="andet">VESTERBRO</option>
+                <option value="andet">AMAGER</option>
+                <option value="andet">FREDERIKSBERG</option>
+                <option value="andet">VALBY</option>
+                <option value="andet">BRØNSHØJ</option>
+                <option value="andet">VANLØSE</option>
+                <option value="andet">HVIDOVRE</option>
+                <option value="andet">GLADSAXE</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="gender">KØN ?</label>
+              <select name="køn" id="vælg-køn">
+                <option value="">-VÆLG ET KØN-</option>
+                <option value="mand">MAND</option>
+                <option value="kvinde">KVINDE</option>
+                <option value="andet">ANDET</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="baker">FORETRUKNE BAGER ?</label>
+              <select name="køn" id="vælg-bager">
+                <option value="">--VÆLG EN BAGER--</option>
+                <option value="mand">LAGEKAGEHUSET</option>
+                <option value="kvinde">JUNO THE BAKERY</option>
+                <option value="andet">ANDERSEN BAKERY</option>
+                <option value="andet">BAGERIET BRØD</option>
+                <option value="andet">EMMERYS</option>
+                <option value="andet">BUKA BAKERY</option>
+                <option value="andet">HART BAKERY</option>
+                <option value="andet">ANDERSEN & MAILLARD</option>
+                <option value="andet">SKIPPER BAGERI</option>
+                <option value="andet">BODENHOFFS BAGERI</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="dob">FØDSELSDAG ?</label>
+              <input id="dob" name="dob" type="date" />
+            </div>
+
+            <div class="field half">
+              <label
+                >HAR DU SET NOGEN ELLER SELV VÆRET I BESIDDELSE AF EN BMO DEN SENESTE UGE ?</label
+              >
+              <div class="yn-group">
+                <label class="radio"
+                  ><input type="radio" name="bno" value="ja" /> JA</label
+                >
+                <label class="radio"
+                  ><input type="radio" name="bno" value="nej" /> NEJ</label
+                >
+              </div>
+            </div>
+
+            <div class="field half">
+              <label for="message"
+                >HVIS JA, HVOR, HVORNÅR OG HVORDAN FIK DU FAT I DEN, ELLER MED HVEM OG HVOR HAR DU SET EN ?</label
+              >
+              <textarea id="message" name="message"></textarea>
+            </div>
+
+            <div class="panel">
+              <div class="grid-inner">
+                <div class="field">
+                  <label for="fullname">FULDE NAVN :</label>
+                  <input id="fullname" name="fullname" type="text" />
+                </div>
+                <div class="field">
+                  <label for="email">EMAIL :</label>
+                  <input id="email" name="email" type="email" />
+                </div>
+                <div class="field">
+                  <label for="phone">TELEFON NUMMER :</label>
+                  <input id="phone" name="phone" type="tel" />
+                </div>
+              </div>
+            </div>
+            <div class="submit-wrap">
+              <button class="submit" type="submit">
+                Indsend <span class="arrow">→</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
     <footer>
       <nav class="some">
