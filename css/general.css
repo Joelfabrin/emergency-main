@@ -42,7 +42,7 @@ h1 {
 #register h1 {
   margin: 40px 0 20px 0;
   padding: 15px 30px;
-  background-color: orangered;
+  background-color: #ae2428;
   color: white;
   font-size: var(--font-h2-size);
 }
@@ -93,7 +93,7 @@ nav a {
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: var(--color-logotype-bg);
+  background-color: black;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -117,7 +117,7 @@ nav a {
 
 #logotype-wrapper > a:hover {
   background-color: transparent;
-  border-color: #ffffff;
+  border-color: #823135;
 }
 
 #logotype-wrapper .logo-img {

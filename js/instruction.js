@@ -1,3 +1,5 @@
+console.log("instruction.js loaded");
+
 document
   .querySelector(".info-graphic button:nth-of-type(1)")
   .addEventListener("click", function () {
@@ -13,3 +15,5 @@ document
   .addEventListener("click", function () {
     console.log("VEJLEDNING button clicked");
   });
+
+document.querySelector(".info-text h2").textContent = "HVAD ER EN BMO?";
