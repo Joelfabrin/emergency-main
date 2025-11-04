@@ -1,3 +1,13 @@
+body {
+  background: radial-gradient(
+    circle at top right,
+    #fffae2 0%,
+    #f0c64e 55%,
+    #ae2428 110%
+  );
+  min-height: 100vh;
+}
+
 html {
   font-family: var(--font-family-sans);
   color: var(--color-text);
@@ -164,8 +174,8 @@ nav a {
 }
 
 #logotype-wrapper > a:hover {
-  background-color: transparent;
-  border: solid 4px white;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
 }
 
 #logotype-wrapper .logo-img {
