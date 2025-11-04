@@ -194,6 +194,7 @@ body#register {
 #register .field {
   display: grid;
   gap: 0.5rem;
+  accent-color: #ae2428;
 }
 
 #register .field.half {
@@ -217,6 +218,7 @@ body#register {
   font-size: 1rem;
   background: #ffffff;
   transition: border 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 #register textarea {
@@ -242,6 +244,7 @@ body#register {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  cursor: pointer;
 }
 
 #register .panel {
