@@ -7,6 +7,7 @@
   border-radius: 20px;
   margin: 10px;
   height: minmax(200px, min-content);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 .daily_text {
   display: grid;
@@ -40,9 +41,11 @@
   padding: 1rem 0;
   height: minmax(300px, min-content);
   width: 350px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 .news_card:nth-child(2n) {
-  background-color: #dbe2f5;
+  background-color: #823135;
+  color: #fffae2;
 }
 .news_card > * {
   padding: 0 1rem;
@@ -83,11 +86,11 @@
   border-radius: 0px 100px 0px 0px;
 }
 .news_card .cta_btn {
-  background-color: #ffa680;
-  color: black;
+  background-color: #ae2428;
+  color: white;
 }
 .news_card:nth-of-type(2n) .cta_btn {
-  background-color: #6f90eb;
+  background-color: #fffae2;
   color: black;
 }
 .cta_btn:after {

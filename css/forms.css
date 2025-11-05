@@ -6,6 +6,7 @@ body#register {
     #ae2428 110%
   );
   min-height: 100vh;
+  border-radius: 20px;
 }
 
 #register main {
@@ -75,7 +76,13 @@ body#register {
 }
 
 #register #form-alert {
-  background: linear-gradient(115deg, #000 0%, #40060a 45%, #ae2428 100%);
+  background: linear-gradient(
+    115deg,
+    black 0%,
+    #823135 35%,
+    #ae2428 65%,
+    #ae2428 100%
+  );
   color: #fffae2;
   display: grid;
   gap: 1.25rem;
@@ -252,7 +259,7 @@ body#register {
   border-radius: 20px;
   padding: 1.4rem;
   grid-column: 1 / 1;
-  width: 270px;
+  width: 435px;
 }
 
 #register .submit-wrap {

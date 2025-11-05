@@ -3,8 +3,10 @@
 }
 .info-graphic,
 .info-text {
-  background-color: white;
-  border-radius: 20px;
+  background-color: #fffae2;
+  border-radius: 28px;
+  padding: clamp(1.8rem, 4vw, 3rem);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 .info-graphic {
   display: flex;
@@ -42,7 +44,7 @@
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
-  background-color: #ae2428;
+  background-color: #823135;
   color: white;
   margin-bottom: 1rem;
 }
@@ -64,10 +66,10 @@
 }
 .info-box {
   padding: 1.5rem 1rem 0.5rem 1rem;
-  background-color: #ffa680;
+  background-color: #823135;
 }
 .info-box:nth-of-type(2n) {
-  background-color: #6f90eb;
+  background-color: #ae2428;
 }
 
 .BMO {
