@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const marquee = document.getElementById("headline-marquee");
   const headline = document.getElementById("headline-marquee-text");
 
-  const SPEED = 260;
+  const SPEED = 200;
   let position = 0;
   let last = null;
 
