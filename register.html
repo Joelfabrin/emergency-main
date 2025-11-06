@@ -69,13 +69,12 @@
           </div>
         </aside>
       </section>
-  
-      </section>
+
       <div class="frame">
         <form action="#" method="post" novalidate>
           <div class="grid">
             <div class="field">
-              <label for="where">HVILKEN BYDEL ER DU FRA ?</label>
+              <label for="vælg-bydel">HVILKEN BYDEL ER DU FRA ?</label>
               <select name="køn" id="vælg-bydel">
                 <option value="">--VÆLG EN BYDEL--</option>
                 <option value="mand">ØSTERBRO</option>
@@ -92,7 +91,7 @@
             </div>
 
             <div class="field">
-              <label for="gender">KØN ?</label>
+              <label for="vælg-køn">KØN ?</label>
               <select name="køn" id="vælg-køn">
                 <option value="">-VÆLG ET KØN-</option>
                 <option value="mand">MAND</option>
@@ -102,7 +101,7 @@
             </div>
 
             <div class="field">
-              <label for="baker">FORETRUKNE BAGER ?</label>
+              <label for="vælg-bager">FORETRUKNE BAGER ?</label>
               <select name="køn" id="vælg-bager">
                 <option value="">--VÆLG EN BAGER--</option>
                 <option value="mand">LAGEKAGEHUSET</option>
@@ -125,7 +124,8 @@
 
             <div class="field half">
               <label
-                >HAR DU SET NOGEN ELLER SELV VÆRET I BESIDDELSE AF EN BMO DEN SENESTE UGE ?</label
+                >HAR DU SET NOGEN ELLER SELV VÆRET I BESIDDELSE AF EN BMO DEN
+                SENESTE UGE ?</label
               >
               <div class="yn-group">
                 <label class="radio"
@@ -139,7 +139,8 @@
 
             <div class="field half">
               <label for="message"
-                >HVIS JA, HVOR, HVORNÅR OG HVORDAN FIK DU FAT I DEN, ELLER MED HVEM OG HVOR HAR DU SET EN ?</label
+                >HVIS JA, HVOR, HVORNÅR OG HVORDAN FIK DU FAT I DEN, ELLER MED
+                HVEM OG HVOR HAR DU SET EN ?</label
               >
               <textarea id="message" name="message"></textarea>
             </div>
@@ -161,13 +162,35 @@
               </div>
             </div>
             <div class="submit-wrap">
-              <button class="submit" type="submit">
+              <div class="form-group">
+                <label for="accept_terms" class="terms-label">
+                  <input
+                    type="checkbox"
+                    id="accept_terms"
+                    name="accept_terms"
+                    value="yes"
+                    aria-describedby="terms-error"
+                    required
+                  />
+                  <span>Accept terms</span>
+                </label>
+                <p class="error-message" id="terms-error" hidden>
+                  Please tick the box
+                </p>
+              </div>
+              <button class="submit" type="submit" disabled>
                 Indsend <span class="arrow">→</span>
               </button>
             </div>
           </div>
         </form>
       </div>
+      <section id="form-summary">
+        <h2>Summary</h2>
+        <article>
+          <p class="placeholder">Opsummering</p>
+        </article>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="footer-inner">
@@ -181,10 +204,12 @@
           <a href="register.html">Indberet</a>
           <a href="mailto:kontakt@bmo.dk">Kontakt</a>
         </nav>
-        <p class="footer-copy">Copyright 2024 BMO. Alle rettigheder forbeholdes.</p>
+        <p class="footer-copy">
+          Copyright 2024 BMO. Alle rettigheder forbeholdes.
+        </p>
       </div>
     </footer>
     <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/forms.js"></script>
   </body>
 </html>

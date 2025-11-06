@@ -138,6 +138,7 @@ nav ul {
 
 a {
   font-family: var(--font-family-sans);
+  color: white;
 }
 
 nav a {
