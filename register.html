@@ -75,7 +75,7 @@
           <div class="grid">
             <div class="field">
               <label for="vælg-bydel">HVILKEN BYDEL ER DU FRA ?</label>
-              <select name="køn" id="vælg-bydel">
+              <select name="bydel" id="bydel">
                 <option value="">--VÆLG EN BYDEL--</option>
                 <option value="mand">ØSTERBRO</option>
                 <option value="kvinde">NØRREBRO</option>
@@ -92,7 +92,7 @@
 
             <div class="field">
               <label for="vælg-køn">KØN ?</label>
-              <select name="køn" id="vælg-køn">
+              <select name="køn" id="køn">
                 <option value="">-VÆLG ET KØN-</option>
                 <option value="mand">MAND</option>
                 <option value="kvinde">KVINDE</option>
@@ -102,7 +102,7 @@
 
             <div class="field">
               <label for="vælg-bager">FORETRUKNE BAGER ?</label>
-              <select name="køn" id="vælg-bager">
+              <select name="bager" id="bager">
                 <option value="">--VÆLG EN BAGER--</option>
                 <option value="mand">LAGEKAGEHUSET</option>
                 <option value="kvinde">JUNO THE BAKERY</option>
@@ -118,8 +118,8 @@
             </div>
 
             <div class="field">
-              <label for="dob">FØDSELSDAG ?</label>
-              <input id="dob" name="dob" type="date" />
+              <label for="birth">FØDSELSDAG ?</label>
+              <input id="birth" name="birth" type="date" />
             </div>
 
             <div class="field half">
@@ -174,10 +174,10 @@
                   />
                   <span>Accept terms</span>
                 </label>
-                <p class="error-message" id="terms-error" hidden>
-                  Please tick the box
-                </p>
               </div>
+              <p class="error-message" id="terms-error" hidden>
+                PLEASE ACCEPT TERMS
+              </p>
               <button class="submit" type="submit" disabled>
                 Indsend <span class="arrow">→</span>
               </button>
@@ -187,9 +187,19 @@
       </div>
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
+
+        <div>
+          <p>Bydel: <span id="summary-bydel">-</span></p>
+          <p>Køn: <span id="summary-køn">-</span></p>
+          <p>Bager: <span id="summary-bager">-</span></p>
+          <p>Fødselsdag: <span id="summary-birth">-</span></p>
+          <p>Observation: <span id="summary-bno">-</span></p>
+          <p>Beskrivelse: <span id="summary-message">-</span></p>
+          <p>Fulde navn: <span id="summary-fullname">-</span></p>
+          <p>Email: <span id="summary-email">-</span></p>
+          <p>Telefon nr: <span id="summary-phone">-</span></p>
+          <p>Vilkår accepteret: <span id="summary-accept">-</span></p>
+        </div>
       </section>
     </main>
     <footer class="site-footer">

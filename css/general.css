@@ -147,7 +147,7 @@ nav a {
 }
 
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
-#logotype-wrapper {
+#logotype-wrapper h1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -171,7 +171,7 @@ nav a {
 }
 
 #logotype-wrapper > a:hover {
-  transform: scale(1.05);
+  transform: scale(0.9);
   transition: transform 0.2s ease-in-out;
 }
 
