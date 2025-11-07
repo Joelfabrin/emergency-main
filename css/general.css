@@ -171,8 +171,8 @@ nav a {
 }
 
 #logotype-wrapper > a:hover {
-  transform: scale(0.9);
-  transition: transform 0.2s ease-in-out;
+  transform: scale(0.95);
+  transition: transform 0.3s ease-in-out;
 }
 
 #logotype-wrapper .logo-img {
